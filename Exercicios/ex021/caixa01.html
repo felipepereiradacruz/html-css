@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixa</title>
+    <style>
+        /*
+        É possível usar shorthands (simplificação) também nas tags de border, margin, padding e outline, basta configurar no sentido horário(Top, right, bottom, left) ou (tamanho, style, color)
+        
+        border: 10px solid dakslategrey;
+        padding: 10px auto 10px auto;
+        margin: 10px 20px; (Usando apenas 1 medida automaticamente sera usado a mesmas pros quatro lados, usando 2 medaidas será aplicado a primeira para Top e Bottom, e a segunda medida para Right e Left)
+        outline: 5px dashed salmon;*/
+        h1{
+            text-align: center;
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategrey;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            margin-top: 20px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            outline: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+        }
+        a{
+            border: 10px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa Box Level</h1>
+    <p>Paragrafos também são exemplos de box level, mas os <a href="a">links são exemplos de caixas inline level.</a>Vamos ver como isso funciona</p>    
+</body>
+</html>
